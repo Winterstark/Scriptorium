@@ -32,7 +32,6 @@ s = info[1]
 e = info[2]
 print(show, "s" + s + "e" + e)
 
-#print("url: ", "http://www.tvrage.com/" + show.replace(" ", "_") + "/episode_list/" + s)
 src = request.urlopen("http://www.tvrage.com/" + show.replace(" ", "_") + "/episode_list/" + s).read()
 
 if "tvr_oops_alpha" in str(src):
